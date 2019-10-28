@@ -1,0 +1,17 @@
+﻿html{-webkit-font-smoothing:antialiased;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{font:400 14px/1.5 "\5FAE\8F6F\96C5\9ED1",Helvetica;color:#323232;background-color:#f6f6f6;-webkit-tap-highlight-color:rgba(0,0,0,0);font-size:.15rem;}
+body,div,dl,dt,dd,del,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,menu{margin:0;padding:0}
+
+
+
+.box02{background:#C4E1FF;overflow:hidden;zoom:1;border-bottom: 1px solid #dcdcdc;}.box02_1{position:relative;overflow:hidden;height:.4rem;padding-right:.4rem;}
+.box02_1 ul{position:absolute;padding-left:.1rem;overflow:hidden;overflow-x:scroll;-webkit-overflow-scrolling:touch;white-space:nowrap;zoom:1;z-index:1;}
+.box02_1 ul li{display:inline-block;min-width:14%;height:.4rem;line-height:.4rem;text-align:center;width: auto!important;overflow:hidden;}
+.box02_1 ul li a{display:block;height:.3rem;line-height:.3rem;margin:.05rem 0;}
+.box02_1 ul li.hover a{background:#1592da;color:#fff;}
+.box02_h .box02_2{margin-top:1.2rem;-webkit-transform:rotate(-180deg);transform:rotate(-180deg);}
+.box02_h .box02_1 ul{height:1.6rem;overflow-x:hidden;white-space:normal;padding-left:0;position:absolute;height:auto;}
+.box02_h .box02_1 li{float:left;min-width:14.28%;}
+.box02_x7{padding:0 .1rem;}
+.box02_x7 ul{padding:0;overflow:hidden;}
+.box02_x7 ul li{float:left;width:14.28%}

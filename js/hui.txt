@@ -1,0 +1,1 @@
+﻿document.write("<center><div class='zw'>{$h}</div></center>");

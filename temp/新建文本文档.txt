@@ -1,0 +1,15 @@
+段落排版之行间距p{line-height:1.5em;}
+
+段落排版之首行缩进p{text-indent:2em;}
+
+段落排版--字间距、字母间距
+如果想在网页排版中设置文字间隔或者字母间隔就可以使用 letter-spacing来实现
+
+h1{letter-spacing:20px};
+
+如果我想设置英文单词之间的间距呢？可以使用word-spacing来实现。如下代码：
+
+h1{word-spacing:20px;}
+————————————————
+版权声明：本文为CSDN博主「绝地反击T」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/u012110719/article/details/41908311

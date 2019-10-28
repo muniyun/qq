@@ -1,0 +1,1 @@
+﻿document.write('<div class='div1'>{$t2}<br><br>{$w19}<br>{$mm2}</div>');

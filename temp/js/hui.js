@@ -1,0 +1,1 @@
+﻿document.write("<center><div class='zw'>回向:愿世间一切众生破无明，入如来境</div></center>");

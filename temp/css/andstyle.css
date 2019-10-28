@@ -1,0 +1,18 @@
+/*------播放器------*/
+.dqbf{line-height:50px;color:#34332F}
+.dqbf a{color:#503A2B}
+.dqbf a:hover{color:#A20109;text-decoration:none;}
+.play{width:100%; overflow:hidden; margin-bottom:15px; background:black;}
+.bflb{ height:450px; width:100%;overflow:hidden;}
+.bflb b{ display:block; height:40px; line-height:40px; color:#EAEAEA; text-align:center;}
+.bflb ul{ width:100%; height:420px;overflow-x:hidden;overflow-y:auto;}
+.bflb ul li{ padding-left:2px; margin-bottom:8px;}
+.bflb ul li a{ display:block; width:100%; height:27px; line-height:27px; padding-left:10px; background:#3E3E3E; color:#B3B3B3; font-size:12px; overflow:hidden;}
+.bflb ul li a:hover{ background:#494949; color:#B3B3B3; text-decoration:none;}
+.bflb ul li a.ap{ font-weight:bold; padding-left:19px; width:100%; color:#c1531e; background:#3E3E3E; overflow:hidden;}
+.bflb ul li a.ap:hover{ padding-left:19px; width:100%; color:#c1531e; background:black;}
+.bflb em{ display:block; width:100%; margin-left:16px; height:30px; line-height:30px; border-bottom:1px dashed #535353; text-align:center; margin-bottom:4px;}
+.bflb em a{ color:#ADADAD; font-size:12px;}
+
+
+
