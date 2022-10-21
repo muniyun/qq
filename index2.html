@@ -1,79 +1,602 @@
 <html>
+
 <head>
-<script type="text/javascript">
-var xmlhttp;
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>道教學術資訊網站</title>
+<style TYPE="text/css">
 
-function loadXMLDoc(url)
-{
-xmlhttp=null;
-if (window.XMLHttpRequest)
-  {// code for IE7, Firefox, Mozilla, etc.
-  xmlhttp=new XMLHttpRequest();
-  }
-else if (window.ActiveXObject)
-  {// code for IE5, IE6
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-if (xmlhttp!=null)
-  {
-  xmlhttp.onreadystatechange=onResponse;
-  xmlhttp.open("GET",url,true);
-  xmlhttp.send(null);
-  }
-else
-  {
-  alert("Your browser does not support XMLHTTP.");
-  }
-}
+<!--
 
-function onResponse()
-{
-if(xmlhttp.readyState!=4) return;
-if(xmlhttp.status!=200)
-  {
-  alert("Problem retrieving XML data");
-  return;
-  }
+TD { font-family: "新細明體", "細明體"; font-size: 12pt;}
 
-txt="<table border='1'>";
-x=xmlhttp.responseXML.documentElement.getElementsByTagName("CD");
-for (i=0;i<x.length;i++)
-  {
-  txt=txt + "<tr>";
-  xx=x[i].getElementsByTagName("TITLE");
-    {
-    try
-      {
-      txt=txt + "<td>" + xx[0].firstChild.nodeValue + "</td>";
-      }
-    catch (er)
-      {
-      txt=txt + "<td> </td>";
-      }
-    }
-  xx=x[i].getElementsByTagName("ARTIST");
-    {
-    try
-      {
-      txt=txt + "<td>" + xx[0].firstChild.nodeValue + "</td>";
-      }
-    catch (er)
-      {
-      txt=txt + "<td> </td>";
-      }
-    }
-  txt=txt + "</tr>";
-  }
-txt=txt + "</table>";
-document.getElementById('copy').innerHTML=txt;
-}
+-->
 
-</script>
+A:link {text-decoration:none;}
+
+A:visited {text-decoration:none;}
+
+</style>
 </head>
 
-<body>
-<div id="copy">
-<button onclick="loadXMLDoc('/example/xmle/cd_catalog.xml')">Get CD info</button>
+<body style="margin:0px;overflow:hidden;" bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<p>
+</p>
+<div id="Layer1"
+style="position:absolute; left:0;top:0px;width:100%;z-index:1;visibility:visible">
+
+<table border="0" width="100%" bgcolor="#FFFFE6">
+  <tr width="100%">
+    <td width="15%" bgcolor="#FFFFe6">
+    <img src="CTCWRI-MTS/CMTimages/left.gif" align="right" width="44" height="600"></td>
+    <td width="70%" valign="top">　<p align="center">
+    　</td>
+    <td width="15%" bgcolor="#FFFFe6">
+    <img src="CTCWRI-MTS/CMTimages/right.gif" align="left" width="44" height="600"> </td>
+  </tr>
+</table>
+</div><div id="Layer2"
+style="height:100%;overflow-x:auto;overflow-y:scroll;padding:10px;
+position:absolute;left:0px;top:0;width:100%;z-index:2;visibility:visible">
+
+<table border="0" width="100%">
+  <tr>
+    <td width="15%" valign="top" align="left">
+    　</td>
+    <td width="70%" align="center">
+    <table border="1" cellspacing="1" id="AutoNumber6" bordercolorlight="#CC9900" bordercolordark="#CC9900" height="378">
+      <tr>
+        <td align="center" colspan="7" height="4">
+        <img border="0" src="CTCWRI-MTS/CMTimages/LOGO-1.jpg" width="482" height="71"></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="7" height="4">
+        <img border="0" src="CTCWRI-MTS/CMTimages/TS-1.gif" width="454" height="140"></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="7" height="4">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font size="6" color="#008080">數位道藏資料庫</font><font size="3" color="#008080">(CH)</font></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="7" height="4">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#800000" size="5"><a href="CMTSME.htm">製作感言</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#800000">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Authorial 
+		Observations</span></font></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font face="新細明體" color="#800000">
+        洞真部</font><font size="3" color="#008080">(CH01)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Dongzheng Volume</span></td>
+        <td align="center" colspan="3" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font face="新細明體" color="#800000">
+    洞玄部</font><font size="3" color="#008080">(CH02)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Dongxuan Volume</span></td>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font face="新細明體" color="#800000">
+    洞神部</font><font size="3" color="#008080">(CH03)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Dongshen Volume</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="6/CTCWRI-MTS/CMT01洞真部/CH0101-C.htm">洞真部本文類</a></span><font size="3" color="#008080">(CH0101)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+	Benwen Series</span></td>
+        <td align="center" colspan="3" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="6/CTCWRI-MTS/CMT02洞玄部/CH0201-C.htm">洞玄部本文類</a></span><font size="3" color="#008080">(CH0201)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+	Benwen Series</span></td>
+        <td align="center" colspan="2" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="3/CTCWRI-MTS/CMT03洞神部/CH0301-C.htm">洞神部本文類</a></span><font size="3" color="#008080">(CH0301)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+	Benwen Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+        <a href="6/CTCWRI-MTS/CMT01洞真部/CNDZ0102-C.htm">洞真部神符類</a></span><font size="3" color="#008080">(CH0102)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">
+		Shenfu(Charm) Series</span></td>
+        <td align="center" colspan="3" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT02洞玄部/CH0202-C.htm">洞玄部神符類</a></span><font size="3" color="#008080">(CH0202)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Yujue Series</span></td>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="3/CTCWRI-MTS/CMT03洞神部/CH0302-C.htm">洞神部神符類</a></span><font size="3" color="#008080">(CH0302)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Shenfu Series</span></td>
+      </tr>
+      <tr>
+        <td width="33%" align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+        <a href="6/CTCWRI-MTS/CMT01洞真部/CH0103-C.htm">洞真部玉訣類</a></span><font size="3" color="#008080">(CH0103)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Yujue Series</span></td>
+        <td width="33%" align="center" colspan="3" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT02洞玄部/CH0203-C.htm">洞玄部玉訣類</a></span><font size="3" color="#008080">(CH0203)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Yujue Series</span></td>
+        <td width="33%" align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="3/CTCWRI-MTS/CMT03洞神部/CH0303-C.htm">洞神部玉訣類</a></span><font size="3" color="#008080">(CH0303)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Yujue Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+        <a href="6/CTCWRI-MTS/CMT01洞真部/CH0104-C.htm">洞真部靈圖類</a></span><font size="3" color="#008080">(CH0104)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Lingtu 
+		Series</span></td>
+        <td align="center" colspan="3" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT02洞玄部/CH0204-C.htm">洞玄部靈圖類</a></span><font size="3" color="#008080">(CH0204)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Lingtu Series</span></td>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="3/CTCWRI-MTS/CMT03洞神部/CH0304-C.htm">洞神部靈圖類</a></span><font size="3" color="#008080">(CH0304)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Lingtu Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT01洞真部/CH0105-C.htm">洞真部譜籙類</a></span><font size="3" color="#008080">(CH0105)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Pulu 
+		Series</span></td>
+        <td align="center" colspan="3" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+        <a href="6/CTCWRI-MTS/CMT02洞玄部/CH0205-C.htm">洞玄部譜籙類</a></span><font size="3" color="#008080">(CH0205)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Pulu Series</span></td>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+        <a href="3/CTCWRI-MTS/CMT03洞神部/CH0305-C.htm">洞神部譜籙類</a></span><font size="3" color="#008080">(CH0305)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Pulu Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="6/CTCWRI-MTS/CMT01洞真部/CH0106-C.htm">洞真部戒律類</a></span><font size="3" color="#008080">(CH0106)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Jielv(Mitzvah) 
+	Series</span></td>
+        <td align="center" colspan="3" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="6/CTCWRI-MTS/CMT02洞玄部/CH0206-C.htm">洞玄部戒律類</a></span><font size="3" color="#008080">(CH0206)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+	Jielv Series</span></td>
+        <td align="center" colspan="2" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="3/CTCWRI-MTS/CMT03洞神部/CH0306-C.htm">洞神部戒律類</a></span><font size="3" color="#008080">(CH0306)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+	Jielv Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT01洞真部/CH0107-C.htm">洞真部威儀類</a></span><font size="3" color="#008080">(CH0107)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Weiyi Series</span></td>
+        <td align="center" colspan="3" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT02洞玄部/CH0207-C.htm">洞玄部威儀類</a></span><font size="3" color="#008080">(CH0207)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Weiyi Series</span></td>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="3/CTCWRI-MTS/CMT03洞神部/CH0307-C.htm">洞神部威儀類</a></span><font size="3" color="#008080">(CH0307)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Weiyi Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT01洞真部/CH0108-C.htm">洞真部方法類</a></span><font size="3" color="#008080">(CH0108)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Fangfa 
+		Series</span></td>
+        <td align="center" colspan="3" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT02洞玄部/CH0208-C.htm">洞玄部方法類</a></span><font size="3" color="#008080">(CH0208)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Fangfa 
+		Series</span></td>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="3/CTCWRI-MTS/CMT03洞神部/CH0308-C.htm">洞神部方法類</a></span><font size="3" color="#008080">(CH0308)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Fangfa 
+		Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT01洞真部/CH0109-C.htm">洞真部眾術類</a></span><font size="3" color="#008080">(CH0109)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Zhongshu Series</span></td>
+        <td align="center" colspan="3" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT02洞玄部/CH0209-C.htm">洞玄部眾術類</a></span><font size="3" color="#008080">(CH0209)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Zhongshu Series</span></td>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="3/CTCWRI-MTS/CMT03洞神部/CH0309-C.htm">洞神部眾術類</a></span><font size="3" color="#008080">(CH0309)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Zhongshu Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="6/CTCWRI-MTS/CMT01洞真部/CH0110-C.htm">洞真部記傳類</a></span><font size="3" color="#008080">(CH0110)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+	Jizhuan Series</span></td>
+        <td align="center" colspan="3" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="6/CTCWRI-MTS/CMT02洞玄部/CH0210-C.htm">洞玄部記傳類</a></span><font size="3" color="#008080">(CH0210)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+	Jizhuan Series</span></td>
+        <td align="center" colspan="2" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="3/CTCWRI-MTS/CMT03洞神部/CH0310-C.htm">洞神部記傳類</a></span><font size="3" color="#008080">(CH0310)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+	Jizhuan Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT01洞真部/CH0111-C.htm">洞真部讚頌類</a></span><font size="3" color="#008080">(CH0111)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Zansong 
+		Series</span></td>
+        <td align="center" colspan="3" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="6/CTCWRI-MTS/CMT02洞玄部/CH0211-C.htm">洞玄部讚頌類</a></span><font size="3" color="#008080">(CH0211)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Zansong 
+	Series</span></td>
+        <td align="center" colspan="2" height="16">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span style="font-family: 新細明體; color: maroon">
+    <a href="3/CTCWRI-MTS/CMT03洞神部/CH0311-C.htm">洞神部讚頌類</a></span><font size="3" color="#008080">(CH0311)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">Zansong 
+	Series</span></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT01洞真部/CH0112-C.htm">洞真部表奏類</a></span><font size="3" color="#008080">(CH0112)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Biaozou Series</span></td>
+        <td align="center" colspan="3" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="6/CTCWRI-MTS/CMT02洞玄部/CH0212-C.htm">洞玄部表奏類</a></span><font size="3" color="#008080">(CH0212)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Biaozou Series</span></td>
+        <td align="center" colspan="2" height="16">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><span style="font-family: 新細明體; color: maroon">
+		<a href="3/CTCWRI-MTS/CMT03洞神部/CH0312-C.htm">洞神部表奏類</a></span><font size="3" color="#008080">(CH0312)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Biaozou Series</span></td>
+      </tr>
+      <tr>
+        <td width="20%" align="center" height="100%">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#800000" face="新細明體">
+        <a href="CTCWRI-MTS/CMT04太玄部/CH04-C.htm">太玄部</a></font><font size="3" color="#008080">(CH04)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Taixuan Volume</span></td>
+        <td width="20%" align="center" colspan="2" height="100%">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#800000" face="新細明體">
+        <a href="CTCWRI-MTS/CMT05太平部/CH05-C.htm">太平部</a></font><font size="3" color="#008080">(CH05)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Taiping Volume</span></td>
+        <td width="20%" align="center" height="100%">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#800000" face="新細明體">
+        <a href="CTCWRI-MTS/CMT06太清部/CH06-C.htm">太清部</a></font><font size="3" color="#008080">(CH06)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Taiqing Volume</span></td>
+        <td width="20%" align="center" colspan="2" height="100%">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#800000" face="新細明體">
+        <a href="5/CTCWRI-MTS/CMT07正乙部/CH07-C.htm">正乙部</a></font><font size="3" color="#008080">(CH08)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Zhengyi Volume</span></td>
+        <td width="20%" align="center" height="100%">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#800000" face="新細明體">
+        <a href="5/CTCWRI-MTS/CMT08續道藏/CH08-C.htm">續道藏</a></font><font size="3" color="#008080">(CH09)</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Subsequent Daozang</span></td>
+      </tr>
+   
+          
+    </table>
+    <p style="margin-top: 0; margin-bottom: 0">　</p>
+    <table border="1" cellspacing="1" width="100%"
+    id="AutoNumber5" bordercolorlight="#CC9900" bordercolordark="#CC9900">
+      <tr>
+        <td width="100%" align="center" colspan="4">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#008080" size="4">
+        正統道藏〔新文豐版．上海書店版．中華道藏．涵芬樓〕冊數頁碼對照表</font><p align="center" style="text-align: center; line-height: 150%; margin: 0 0cm">
+		<span lang="EN-US" style="font-size: 13.5pt; line-height: 150%; font-family: 細明體; color: teal">
+		Zhengtong Daozang</span></p>
+		<p align="center" style="text-align: left; line-height: 150%; margin: 0 0cm">
+		<span lang="EN-US" style="font-family: 細明體">Scroll Number &amp; Page Number 
+		Comparison Table</span></p>
+		<p align="center" style="text-align: left; line-height: 150%; margin: 0 0cm">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">For: New 
+		WenFeng Version, Shanghai Bookshop Version, Zhonghua Daozang Version, 
+		and Hanfenlou Version</span></td>
+      </tr>
+      <tr>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font face="細明體" color="#008080">
+        <a href="CTCWRI-MTS/CMT10版本對照/CMTS01CH.htm">洞真部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Dongzhen Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font face="細明體" color="#008080">
+        <a href="CTCWRI-MTS/CMT10版本對照/CMTS02CH.htm">洞玄部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Dongxuan Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font face="細明體" color="#008080">
+        <a href="CTCWRI-MTS/CMT10版本對照/CMTS03CH.htm">洞神部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Dongshen Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#008080">
+        <a href="CTCWRI-MTS/CMT10版本對照/CMTS04CH.htm">太玄部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Taixuan Volume</span></td>
+      </tr>
+      <tr>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#008080">
+        <a href="CTCWRI-MTS/CMT10版本對照/CMTS05CH.htm">太平部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Taiping Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#008080">
+        <a href="CTCWRI-MTS/CMT10版本對照/CMTS06CH.htm">太清部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Taiqing Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#008080">
+        <a href="CTCWRI-MTS/CMT10版本對照/CMTS07CH.htm">正乙部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Zhengyi Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#008080">
+        <a href="CTCWRI-MTS/CMT10版本對照/CMTS08CH.htm">續道藏</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Subsequent Daozang</span></td>
+      </tr>
+    </table>
+    <table border="1" cellspacing="1" width="100%" id="AutoNumber6" bordercolorlight="#CC9900"
+    bordercolordark="#CC9900">
+      <tr>
+        <td width="100%" align="center" colspan="4">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#800080" size="5">
+        正統道藏經目簡介</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 18.0pt; font-family: 細明體; color: purple">
+		Synopsis of Zhengtong Daozang Contents</span></td>
+      </tr>
+      <tr>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font face="細明體"><a href="CTCWRI-MTS/CMT09道藏經目簡介/CMTS00-1.htm">洞真部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Dongzhen Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font face="細明體"><a href="CTCWRI-MTS/CMT09道藏經目簡介/CMTS00-2.htm">洞玄部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Dongxuan Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font face="細明體"><a href="CTCWRI-MTS/CMT09道藏經目簡介/CMTS00-3.htm">洞神部</a></font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Dongshen Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <a href="CTCWRI-MTS/CMT09道藏經目簡介/CMTS00-4.htm">太玄部</a><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Taixuan Volume</span></td>
+      </tr>
+      <tr>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <a href="CTCWRI-MTS/CMT09道藏經目簡介/CMTS00-5.htm">太平部</a><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Taiping Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <a href="CTCWRI-MTS/CMT09道藏經目簡介/CMTS00-6.htm">太清部</a><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Taiqing Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <a href="CTCWRI-MTS/CMT09道藏經目簡介/CMTS00-7.htm">正乙部</a><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Zhengyi Volume</span></td>
+        <td width="25%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <a href="CTCWRI-MTS/CMT09道藏經目簡介/CMTS00-8.htm">續道藏</a><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: teal">
+		Subsequent Daozang</span></td>
+      </tr>
+    </table>
+    <p style="margin-top: 0; margin-bottom: 0">　</p>
+	<table border="1" width="100%" height="473">
+		<tr>
+			<td colspan="6">
+			<p align="center" style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font size="5" color="#FF0080">道教諱秘造字</font><p align="center" style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+			<span lang="EN-US" style="font-size: 18.0pt; font-family: 細明體; color: #FF0080">
+			Taoism Sacral Characters</span></td>
+		</tr>
+		<tr>
+        <td width="95%" align="center" height="20%" colspan="6">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#800000" size="5">
+			<a href="PCHTTE/EUDC道教諱秘字集使用說明.htm">道教諱秘字集使用說明</a></font></p>
+		<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: maroon">
+		Notice of Usage</span></td>
+      	</tr>
+		<tr>
+        <td width="48%" align="center" height="16%" colspan="3">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#FF0080" size="3">
+			<a href="PCHTTE/道教諱秘字造字集.pdf">道教諱秘造字內碼表(PDF)</a></font></p>
+		<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: #FF0080">
+		Internal Codes Chart of Taoism Sacral Characters (PDF)</span></td>
+        <td width="47%" align="center" height="16%" colspan="3">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#FF0080" size="3">
+			<a href="PCHTTE/道教諱秘字造字集_部首.pdf">道教諱秘造字部首表(PDF)</a></font></p>
+		<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+		<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: #FF0080">
+		Radicals Chart of Taoism Sacral Characters (PDF)</span></td>
+      	</tr>
+		<tr>
+        <td width="48%" align="center" height="16%" colspan="3">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#FF0080" size="3">
+			<a href="PCHTTE/道教諱秘字造字集.htm">道教諱秘造字內碼表(HTM)</a></font></td>
+        <td width="47%" align="center" height="16%" colspan="3">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+        <font color="#FF0080" size="3">
+			<a href="PCHTTE/道教諱秘字造字集(部首).htm">道教諱秘造字部首表(HTM)</a></font></td>
+      	</tr>
+		<tr>
+			<td align="center" colspan="6">
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#800000" size="5">
+			<a href="PCHTTE/PCHTTE.rar">道教諱秘字集</a></font><font color="#0000FF" size="5">(PCHTTE)</font></td>
+			</tr>
+		<tr>
+			<td align="center">
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#FF0080"><a href="PCHTTE/細明.tte">細明體</a></font></p>
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+			<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: #FF0080">
+			Ximing Style</span></td>
+			<td align="center">
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#FF0080"><a href="PCHTTE/中楷.tte">中楷體</a></font></p>
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+			<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: #FF0080">
+			Zhongkai Style</span></td>
+			<td colspan="2" align="center">
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#FF0080">古印體</font></p>
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+			<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: #FF0080">
+			Guyin Style</span></td>
+			<td align="center">
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#FF0080">新篆體</font></p>
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+			<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: #FF0080">
+			Xinzuan Style</span></td>
+			<td align="center">
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#FF0080">棣書體</font></p>
+			<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+			<span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: #FF0080">
+			Dishu Style</span></td>
+      	</tr>
+		<tr>
+        <td width="95%" align="center" height="46%" colspan="6">
+        <p style="line-height: 200%; margin-top: 2px; margin-bottom: 2px">
+		<span style="font-family: 新細明體,serif; color: red; background: lime">
+		<font size="6">＊僅限於繁體</font></span><font size="6"><span lang="EN-US" style="color: red; background: lime">BIG5</span></font><span style="font-family: 新細明體,serif; color: red; background: lime"><font size="6">中文主系統＊</font></span></p>
+		<p style="line-height: 200%; margin-top: 2px; margin-bottom: 2px">
+		<span style="background-color: #00FF00; background-position: 0% 0%">
+		<font size="6" color="#FF0000"><span style="font-family: 新細明體,serif">
+		!!善意警告!!</span></font></span></p>
+		<p style="line-height: 200%; margin-top: 2px; margin-bottom: 2px">
+		<span style="background-color: #00FF00; background-position: 0% 0%">
+		<font size="6" color="#FF0000"><span style="font-family: 新細明體,serif">
+		請勿試圖安裝於簡體(GB)系統</span></font></span></p>
+		<p style="line-height: 200%; margin-top: 2px; margin-bottom: 2px">
+		<span style="background-color: #00FF00; background-position: 0% 0%">
+		<font size="6" color="#FF0000"><span style="font-family: 新細明體,serif">
+		會導至原有之字庫錯亂</span></font></span></td>
+      	</tr>
+	</table>
+	<p style="margin-top: 0; margin-bottom: 0">　</p>
+    <p style="margin-top: 0; margin-bottom: 0">　</p>
+    <table border="1" cellspacing="1" width="100%" id="AutoNumber4" bordercolorlight="#000080" bordercolordark="#000080" bgcolor="#FFFFE6">
+      <tr>
+        <td width="15%" align="center">
+        <p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font color="#800000">策劃
+		發行</font></td>
+        <td width="71%" align="center">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <font color="#800000">洪百堅</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: maroon">
+	Hong </span>
+	<span style="font-size: 12.0pt; font-family: 細明體; color: maroon">paichien</span></td>
+      </tr>
+      <tr>
+        <td width="15%" align="center">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <font color="#800000">製作單位</font></td>
+        <td width="71%" align="center">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <font color="#800000">道教學術資訊網站</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體">
+	www.ctcwri.idv.tw</span></td>
+      </tr>
+      <tr>
+        <td width="15%" align="center">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <font color="#800000">製　　作</font></td>
+        <td width="71%" align="center">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <font color="#800000">洪百堅</font><p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <span lang="EN-US" style="font-size: 12.0pt; font-family: 細明體; color: maroon">
+	ong </span><span style="font-size: 12.0pt; font-family: 細明體; color: maroon">
+	paichien</span></td>
+      </tr>
+      <tr>
+        <td width="15%" align="center">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <font color="#800000">志工人員</font></td>
+        <td width="71%" align="center">
+    <p style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+    <font color="#800000">王玉琤　羅建英　鍾裕彬　潘秀玫</font></td>
+      </tr>
+		</table>
+    </td>
+    <td width="15%">
+    <p></p>
+    <p></td>
+  </tr>
+</table>
 </div>
 </body>
 </html>
